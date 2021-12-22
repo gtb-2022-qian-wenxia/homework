@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ -e /home/qwx/number.txt ];then
+	sum=`cat /home/qwx/number.txt`
+else
+	sum=0
+fi
+sum=`expr ${sum} + 1`
+echo ${sum}
+echo $sum > /home/qwx/number.txt
+
